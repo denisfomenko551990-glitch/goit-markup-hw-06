@@ -176,11 +176,19 @@ a {
 
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-menu.is-open {
   opacity: 1;
   pointer-events: auto;
+  visibility: visible;
 }
 
 .mob-btn {
