@@ -440,7 +440,8 @@ a {
   box-shadow:
     0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 2px 1px rgba(46, 47, 66, 0.08);~
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+  ~
 }
 
 .portfolio-list-item:focus {
@@ -825,7 +826,7 @@ a {
   border-color: #4d5ae5;
 }
 
-.modal-input:focus + .modal-icon-input {
+.modal-input:focus+.modal-icon-input {
   fill: #4d5ae5;
 }
 
@@ -863,7 +864,7 @@ a {
   margin-bottom: 24px;
 }
 
-.modal-check:checked + .modal-label-checkbox .check-icon {
+.modal-check:checked+.modal-label-checkbox .check-icon {
   background-color: #404bbf;
   fill: #f4f4fd;
 }
@@ -1074,6 +1075,7 @@ a {
   .header-contacts-list {
     display: flex;
     flex-direction: row;
+    gap: 40px;
   }
 
   .contacts-list-link {
@@ -1128,20 +1130,20 @@ a {
     padding: 188px 0;
   }
 
-  @media screen and (min-resolution: 2x) {
-    .hero {
-      background-image:
-        linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/heroimage1158x2.jpg);
-    }
-  }
-
   .hero-title {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     max-width: 496px;
     margin: 0 auto 48px;
+  }
+}
+
+@media screen and (min-resolution: 2x) {
+  .hero {
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/heroimage1158x2.jpg);
   }
 }
 
