@@ -194,7 +194,7 @@ a {
   background-position: center;
   max-width: 320px;
   margin: 0 auto;
-  padding: 72px 52px;
+  padding: 72px 0;
 
   @media screen and (min-resolution: 2x) {
     background-image:
@@ -1034,6 +1034,7 @@ a {
 
   .header-logo {
     padding: 24px 0;
+    margin-right: 120px;
   }
 
   .header-contacts {
