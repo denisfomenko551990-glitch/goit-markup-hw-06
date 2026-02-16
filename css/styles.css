@@ -195,8 +195,10 @@ a {
   max-width: 320px;
   margin: 0 auto;
   padding: 72px 0;
+}
 
-  @media screen and (min-resolution: 2x) {
+@media screen and (max-width: 767px) and (min-resolution: 2x) {
+  .hero {
     background-image:
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/heroimage320x2.jpg);
@@ -441,7 +443,6 @@ a {
     0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
-  ~
 }
 
 .portfolio-list-item:focus {
@@ -618,7 +619,7 @@ a {
 .footer-input {
   border: 1px solid #fff;
   border-radius: 4px;
-  width: 264px;
+  width: 288px;
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   padding: 8px 16px;
@@ -826,7 +827,7 @@ a {
   border-color: #4d5ae5;
 }
 
-.modal-input:focus+.modal-icon-input {
+.modal-input:focus + .modal-icon-input {
   fill: #4d5ae5;
 }
 
@@ -864,7 +865,7 @@ a {
   margin-bottom: 24px;
 }
 
-.modal-check:checked+.modal-label-checkbox .check-icon {
+.modal-check:checked + .modal-label-checkbox .check-icon {
   background-color: #404bbf;
   fill: #f4f4fd;
 }
@@ -1098,12 +1099,6 @@ a {
     padding: 112px 136px;
     background-repeat: no-repeat;
     background-size: cover;
-
-    @media screen and (min-resolution: 2x) {
-      background-image:
-        linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/heroimage768x2.jpg);
-    }
   }
 
   .hero-title {
@@ -1115,6 +1110,13 @@ a {
   }
 }
 
+@media screen and (min-width: 768px) and (min-resolution: 2x) {
+  .hero {
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/heroimage768x2.jpg);
+  }
+}
 /*------------------Media hero 1158px------------------------------*/
 @media screen and (min-width: 1158px) {
   .hero {
@@ -1139,7 +1141,7 @@ a {
   }
 }
 
-@media screen and (min-resolution: 2x) {
+@media screen and (min-width: 1158px) and (min-resolution: 2x) {
   .hero {
     background-image:
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
