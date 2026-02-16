@@ -628,6 +628,7 @@ a {
   line-height: 2;
   letter-spacing: 0.04em;
   color: #fff;
+  opacity: 0.3;
   outline: transparent;
   background-color: transparent;
   transition-property: border-color;
@@ -649,6 +650,7 @@ a {
   line-height: 2;
   letter-spacing: 0.04em;
   color: #fff;
+  opacity: 0.6;
 }
 
 .footer-button {
@@ -1096,7 +1098,7 @@ a {
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/heroimage768.jpg);
     max-width: 768px;
-    padding: 112px 136px;
+    padding: 112px 0;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -1104,7 +1106,6 @@ a {
   .hero-title {
     font-size: 56px;
     line-height: 1.07;
-    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     max-width: 496px;
     margin: 0 auto 36px;
   }
@@ -1313,13 +1314,22 @@ a {
 
   .footer-container {
     display: flex;
-    gap: 120px;
+    gap: 0;
     align-items: baseline;
     flex-wrap: nowrap;
+    padding-left: 0;
+  }
+
+  .footer-logo-container {
+    margin-right: 120px;
   }
 
   .footer-text {
     max-width: 264px;
+  }
+
+  .footer-list-wrap {
+    margin-right: 80px;
   }
 
   .footer-subscribe {
@@ -1330,6 +1340,14 @@ a {
   .footer-form {
     display: flex;
     gap: 24px;
+  }
+
+  .footer-input {
+    opacity: 1;
+  }
+
+  .footer-input::placeholder {
+    opacity: 1;
   }
 }
 
