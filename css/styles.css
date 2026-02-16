@@ -427,6 +427,7 @@ a {
 }
 
 .portfolio-list-item {
+  max-width: 288px;
   box-shadow:
     0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16),
@@ -936,11 +937,22 @@ a {
   justify-content: center;
   align-items: center;
   border: 1px solid #e7e9fc;
-  background-color: transparent;
+  background-color: #e7e9fc;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-btn-close:hover,
+.mob-btn-close:focus {
+  background-color: #404bbf;
 }
 
 .btn-menu-close {
   fill: #2e2f42;
+}
+
+.mob-btn-close:hover .btn-menu-close,
+.mob-btn-close:focus .btn-menu-close {
+  fill: #fff;
 }
 
 .mob-header-navigation {
@@ -991,12 +1003,23 @@ a {
   font-style: normal;
 }
 
+.mob-contacts-tel:hover,
+.mob-contacts-tel:focus {
+  color: #404bbf;
+}
+
 .mob-contacts-email {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #434455;
+  font-style: normal;
+}
+
+.mob-contacts-email:hover,
+.mob-contacts-email:focus {
+  color: #404bbf;
 }
 
 .mob-list-icon {
@@ -1017,6 +1040,11 @@ a {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-social-link:hover,
+.mob-social-link:focus {
+  background-color: #31d0aa;
 }
 
 .mob-social-icon {
@@ -1073,6 +1101,10 @@ a {
 @media screen and (min-width: 1158px) {
   .header-menu {
     display: none;
+  }
+
+  .header-logo {
+    margin-right: 76px;
   }
 
   .header-contacts-list {
