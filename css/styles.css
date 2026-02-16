@@ -39,9 +39,25 @@ a {
 
 .container {
   max-width: 320px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
+}
+
+/*----------------media container 768px--------------------*/
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/*----------------media container 1158px--------------------*/
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 /*header*/
@@ -1073,12 +1089,6 @@ a {
 
 /*------------------Media hero 768px------------------------------*/
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
   .hero {
     background: #2e2f42;
     background-image:
@@ -1107,12 +1117,6 @@ a {
 
 /*------------------Media hero 1158px------------------------------*/
 @media screen and (min-width: 1158px) {
-  .container {
-    max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
   .hero {
     background: #2e2f42;
     background-image:
@@ -1146,12 +1150,6 @@ a {
 /*-------------------Media Features 768px-------------------------*/
 
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
   .features-list {
     gap: 72px 24px;
   }
@@ -1168,12 +1166,6 @@ a {
 /*-------------------Media Features 1158px-------------------------*/
 
 @media screen and (min-width: 1158px) {
-  .container {
-    max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
   .features {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -1217,12 +1209,6 @@ a {
 
 /*------------------Media team 768px------------------------------*/
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
   .team-list {
     gap: 64px 24px;
   }
@@ -1231,12 +1217,6 @@ a {
 /*------------------Media team 1158px------------------------------*/
 
 @media screen and (min-width: 1158px) {
-  .container {
-    max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
   .team {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -1256,12 +1236,6 @@ a {
 /*------------------Media portfolio 768px------------------------------*/
 
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
   .portfolio-list {
     column-gap: 24px;
     row-gap: 72px;
@@ -1275,12 +1249,6 @@ a {
 
 /*------------------Media portfolio 1158px------------------------------*/
 @media screen and (min-width: 1158px) {
-  .container {
-    max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
   .portfolio-list {
     row-gap: 48px;
     column-gap: 24px;
@@ -1293,12 +1261,6 @@ a {
 
 /*------------------media footer 768px-----------------*/
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
   .footer-container {
     display: flex;
     flex-wrap: wrap;
@@ -1340,12 +1302,6 @@ a {
 
 /*------------------media footer 1158px-----------------*/
 @media screen and (min-width: 1158px) {
-  .container {
-    max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
   .footer {
     background: #2e2f42;
     padding-top: 100px;
