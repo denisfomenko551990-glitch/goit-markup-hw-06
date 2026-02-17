@@ -603,7 +603,6 @@ a {
 
 .footer-subscribe {
   width: 288px;
-  margin-left: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
