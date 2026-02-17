@@ -1277,6 +1277,7 @@ a {
   }
 
   .portfolio-list-item {
+    max-width: 360px;
     width: calc((100% - 24px) / 2);
     box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   }
@@ -1284,6 +1285,11 @@ a {
 
 /*------------------Media portfolio 1158px------------------------------*/
 @media screen and (min-width: 1158px) {
+  .portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
   .portfolio-list {
     row-gap: 48px;
     column-gap: 24px;
