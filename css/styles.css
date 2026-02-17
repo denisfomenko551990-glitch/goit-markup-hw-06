@@ -883,6 +883,7 @@ a {
 }
 
 .check-icon {
+  flex-shrink: 0;
   width: 16px;
   height: 16px;
   border-radius: 2px;
@@ -1225,6 +1226,7 @@ a {
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 8px;
+    text-align: left;
   }
 
   .features-text {
@@ -1357,7 +1359,8 @@ a {
     gap: 0;
     align-items: baseline;
     flex-wrap: nowrap;
-    padding-left: 0;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .footer-logo-container {
